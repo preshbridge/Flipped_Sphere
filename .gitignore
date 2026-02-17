@@ -1,58 +1,58 @@
-@"
-# =============== #
-# Unity .gitignore
-# =============== #
-
+# =============== UNITY ===============
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
 [Bb]uild/
 [Bb]uilds/
 [Ll]ogs/
-UserSettings/
-MemoryCaptures/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+
+# Asset meta data should only be ignored when the corresponding asset is ignored
+!/[Aa]ssets/**/*.meta
+
+# Visual Studio cache
 .vs/
+.vscode/
+
+# Rider
 .idea/
-*.csproj
-*.sln
-*.user
-*.userprefs
+
+# MonoDevelop
 *.pidb
-*.booproj
-*.svd
-[Pp]ackages/com.unity.collab-proxy/
-[Pp]ackages/com.unity.package-manager/
-*.unityproj
-*.tmproj
-*.pdb
 *.mdb
 *.opendb
-*.VC.db
-.DS_Store
-Thumbs.db
-ehthumbs.db
-Icon?
-desktop.ini
+*.pdb
+
+# Unity3D generated
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb.meta
+
+# Crash reports
 sysinfo.txt
+
+# Build artifacts
 *.apk
 *.aab
-*.xcodeproj
-*.xcworkspace
-*.ipa
+*.unitypackage
 *.app
 *.exe
-*.dll
-*.so
-*.dylib
-*.bundle
-*.log
-Library/**/*.meta
-*.shadercache
-/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*
-/[Aa]ssets/[Ll]ightmap*/
-/[Ll]ightmapSnapshot.asset
-/[Aa]ssets/[Cc]rashReports/
-!/[Aa]ssets/
-!/[Pp]rojectSettings/
-!/[Pp]ackages/
-"@ | Out-File -Encoding utf8 .gitignore
+*.zip
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# WebGL
+WebGL Builds/
+
+# Git files
+.gitmodules
